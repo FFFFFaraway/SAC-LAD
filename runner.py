@@ -74,9 +74,16 @@ class Runner:
         return data
 
     def split_by_clip(self):
-        if os.path.exists('data/split_data_clip.pkl'):
-            f = open("data/split_data_clip.pkl", "rb")
-            return pickle.load(f)
+        # after review, use the whole public dataset
+        # if os.path.exists('data/split_data_clip.pkl'):
+        #     f = open("data/split_data_clip.pkl", "rb")
+        #     return pickle.load(f)
+
+        # under review, only a small part of dataset is used
+        if os.path.exists('data/only_under_review.pkl'):
+            with open("data/only_under_review.pkl", "rb") as f:
+                data = pickle.load(f)
+            return data
         data = self.read_data()
         split_data = {
             'train': {},
@@ -85,8 +92,8 @@ class Runner:
         }
         for m in 'vapty':
             split_data['train'][m], split_data['val'][m], split_data['test'][m] = self.split(data[m])
-        f = open("data/split_data_clip.pkl", "wb")
-        pickle.dump(split_data, f)
+        with open("data/split_data_clip.pkl", "wb") as f:
+            pickle.dump(split_data, f)
         return split_data
 
     def split_by_speaker(self):

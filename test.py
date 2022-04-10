@@ -9,7 +9,12 @@ args = {
     't_dim': 768,
     'h_dim': 128,
     'dropout': 0.1,
+    'batch_size': 4,
+    'lr': 3e-06,
     'random_seed': 2021,
+    'dif_coef': 1,
+    'sim_coef': 1,
+    'recon_coef': 1,
     'split_by': 'clip',  # clip or speaker
     'device': 'cpu',  # cpu or cuda
 }

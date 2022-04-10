@@ -7,7 +7,9 @@ conda activate lad
 
 ## Data Download
 
-Download extracted features from `https://drive.google.com/drive/folders/1_xHhQONEnINF1mFloLGD43XEJpHwZoeS?usp=sharing`, and move it to `data` folder.
+Download extracted features from `[...]`(Due to the email leak problem in the google drive link, we cannot provide the dataset download link under review stage) and move it to the `data` folder.
+
+In the review stage, due to the size limit of the supplementary materials, we can only attach a small part of the dataset to verify that the code is runnable.
 
 ## Running the code
 
@@ -25,4 +27,4 @@ If this paper is useful for your research, please cite us at:
 
 ## Contact
 
-For any questions, please email at songwei@bupt.edu.cn
+For any questions, please email at `[...]`
