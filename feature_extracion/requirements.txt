@@ -3,5 +3,3 @@
 # platform: linux-64
 pytorch
 torchaudio
-moviepy
-transformers

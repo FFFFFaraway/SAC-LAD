@@ -4,12 +4,16 @@
 
 ```bash
 cd feature_extracion
-conda create -n feature_extracion --file requirements.txt
-conda activate feature_extracion
-pip install websocket websocket-client
+conda create -n feature_extraction --file requirements.txt
+conda activate feature_extraction
+pip install websocket websocket-client transformers moviepy
 ```
 
-2. We use the gluon-cv to extract visual features. Clone it to the gluon-cv directory:
+Install audio backend:
+SoundFile for Windows `pip install PySoundFile`
+Sox for Linux `pip install sox`
+
+3. We use the gluon-cv to extract visual features. Clone it to the gluon-cv directory:
 ```bash
 git clone git@github.com:dmlc/gluon-cv.git
 ```
