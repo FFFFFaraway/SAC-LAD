@@ -3,8 +3,10 @@
 1. Set python environment:
 
 ```bash
-conda create -n feature_extracion -f requirements.txt
+cd feature_extracion
+conda create -n feature_extracion --file requirements.txt
 conda activate feature_extracion
+pip install websocket websocket-client
 ```
 
 2. We use the gluon-cv to extract visual features. Clone it to the gluon-cv directory:

@@ -1,7 +1,7 @@
 ## Setup the environment
 
 ```bash
-conda create -n lad -f requirements.txt
+conda create -n lad --file requirements.txt
 conda activate lad
 ```
 
