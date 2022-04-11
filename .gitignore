@@ -1,3 +1,5 @@
 .idea/
 __pycache__/
 data/split_data_clip.pkl
+feature_extracion/bert/pytorch_model.bin
+feature_extracion/gluon-cv/

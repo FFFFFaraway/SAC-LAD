@@ -11,6 +11,25 @@ Download extracted features from `[...]`(Due to the email leak problem in the go
 
 In the review stage, due to the size limit of the supplementary materials, we can only attach a small part of the dataset to verify that the code is runnable.
 
+The dataset is saved using a python dict object, whose structure is:
+
+```json
+{
+  "train": {
+    "v": np.array with shape(N, 2048),
+    "a": np.array with shape(N, 599, 512),
+    "p": np.array with shape(N, 100, 768),
+    "t": np.array with shape(N, 100, 768),
+    "y": np.array with shape(N, ),
+  },
+  "val": {...},
+  "test": {...}
+}
+```
+
+`v,a,p,t,y` correspond to visual, audio, script, live text and label respectively.
+
+
 ## Running the code
 
 Train model using `python train.py` and test model using `python test.py`
