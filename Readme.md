@@ -13,7 +13,7 @@ In the review stage, due to the size limit of the supplementary materials, we ca
 
 The dataset is saved using a python dict object, whose structure is:
 
-```json
+```
 {
   "train": {
     "v": np.array with shape(N, 2048),
