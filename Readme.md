@@ -7,9 +7,7 @@ conda activate lad
 
 ## Data Download
 
-Download extracted features from `[...]`(Due to the email leak problem in the google drive link, we cannot provide the dataset download link under review stage) and move it to the `data` folder.
-
-In the review stage, due to the size limit of the supplementary materials, we can only attach a small part of the dataset to verify that the code is runnable.
+Download extracted features `split_data_clip.pkl` from `https://drive.google.com/file/d/1a7v6PeTogJ1x9vIOcK1ab1aLWGYaygRS/view?usp=sharing` and move it to the `data` folder.
 
 The dataset is saved using a python dict object, whose structure is:
 
@@ -46,4 +44,5 @@ If this paper is useful for your research, please cite us at:
 
 ## Contact
 
-For any questions, please email at `[...]`
+For any questions, please email at `songwei@bupt.edu.cn`
+

@@ -79,9 +79,8 @@ class Runner:
         #     f = open("data/split_data_clip.pkl", "rb")
         #     return pickle.load(f)
 
-        # under review, only a small part of dataset is used
-        if os.path.exists('data/only_under_review.pkl'):
-            with open("data/only_under_review.pkl", "rb") as f:
+        if os.path.exists('data/split_data_clip.pkl'):
+            with open("data/split_data_clip.pkl", "rb") as f:
                 data = pickle.load(f)
             return data
         data = self.read_data()
