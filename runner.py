@@ -74,11 +74,6 @@ class Runner:
         return data
 
     def split_by_clip(self):
-        # after review, use the whole public dataset
-        # if os.path.exists('data/split_data_clip.pkl'):
-        #     f = open("data/split_data_clip.pkl", "rb")
-        #     return pickle.load(f)
-
         if os.path.exists('data/split_data_clip.pkl'):
             with open("data/split_data_clip.pkl", "rb") as f:
                 data = pickle.load(f)
