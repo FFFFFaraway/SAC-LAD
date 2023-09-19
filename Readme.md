@@ -39,7 +39,15 @@ You can edit args in these `.py` files
 If this paper is useful for your research, please cite us at:
 
 ```latex
-@article{}
+@INPROCEEDINGS{10220045,
+  author={Song, Wei and Wu, Bin and Zheng, Chunping and Zhang, Huayang},
+  booktitle={2023 IEEE International Conference on Multimedia and Expo (ICME)}, 
+  title={Detection Of Public Speaking Anxiety: A New Dataset And Algorithm}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={2633-2638},
+  doi={10.1109/ICME55011.2023.00448}}
 ```
 
 ## Contact
